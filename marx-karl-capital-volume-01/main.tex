@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt]{report}
+
+% lang
+\usepackage[UKenglish]{babel}
+\usepackage{csquotes}
+
+\usepackage{subfiles}
+\usepackage{verse} % For poetry. Damn it, Marx.
+
+\usepackage[style=verbose-note, natbib=true, backend=biber]{biblatex} % For referencing
+\usepackage[hidelinks]{hyperref} % Adding URLs in citations
+\usepackage{cleveref}
+\addbibresource{ref/01.bib}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+ 
+        {\Huge  \textbf{Capital}}
+ 
+        \vspace{0.5cm}
+        {\textsc{A Critique of Political Economy}}
+                   
+        \vspace{1.5cm}
+        
+        {\textbf{Karl Marx}}
+
+        \vspace{1.5cm}
+
+        \vspace{0.5cm}
+         Volume I
+
+        \vspace{0.5cm}
+         The Process of Production of Capital
+
+        \vfill
+    \end{center}
+ \end{titlepage}
+
+\tableofcontents
+
+\part{Commodities and Money}
+\subfile{chapters/01.tex}
+% \subfile{../chapters/chapter1.tex}
+% \subfile{../chapters/chapter2.tex}
+% \subfile{../chapters/chapter3.tex}
+
+
+\printbibliography
+\end{document}
