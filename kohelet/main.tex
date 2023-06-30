@@ -1,0 +1,49 @@
+\documentclass[a4paper,11pt,doublespaced]{report}
+
+% lang
+\usepackage[UKenglish]{babel}
+\usepackage{csquotes}
+
+\usepackage{subfiles}
+% \usepackage{verse}
+
+% \usepackage[style=verbose-note, natbib=true, backend=biber]{biblatex} % For referencing
+% \usepackage[hidelinks]{hyperref} % Adding URLs in citations
+% \usepackage{cleveref}
+% \addbibresource{ref/01.bib}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+ 
+        {\Huge  \textbf{The Hebrew Bible}}
+ 
+        \vspace{0.5cm}
+        {or, \textsc{The Old Testament}}
+        
+                   
+        \vspace{1.5cm}
+        
+        {\large \textbf{KOHELET}}
+
+        \vspace{1.5cm}
+
+        \vspace{0.5cm}
+        {sometimes also called,\\
+        \textsc{Ecclesiastes}}
+
+        \vspace{0.5cm}
+
+        \vfill
+    \end{center}
+ \end{titlepage}
+
+\tableofcontents
+
+\subfile{chapters/01.tex}
+\subfile{chapters/02.tex}
+% \subfile{chapters/03.tex}
+
+\end{document}
