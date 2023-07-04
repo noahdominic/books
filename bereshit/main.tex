@@ -5,12 +5,19 @@
 \usepackage{csquotes}
 
 \usepackage{subfiles}
+\usepackage{lipsum} % add nonsense text
+\usepackage{fontspec}
+\setmainfont[RawFeature={+onum,+pnum,+ss05,+cpsp,+dlig,+case}]{Libertinus Serif}
 % \usepackage{verse}
 
 % \usepackage[style=verbose-note, natbib=true, backend=biber]{biblatex} % For referencing
 % \usepackage[hidelinks]{hyperref} % Adding URLs in citations
 % \usepackage{cleveref}
 % \addbibresource{ref/01.bib}
+
+\newcommand{\secsep}{\begin{center}
+    $\ast$~$\ast$~$\ast$
+\end{center}}
 
 \begin{document}
 
@@ -46,5 +53,8 @@
 \subfile{chapters/01.tex}
 \subfile{chapters/02.tex}
 \subfile{chapters/03.tex}
+\subfile{chapters/04.tex}
+\subfile{chapters/05.tex}
+\subfile{chapters/06.tex}
 
 \end{document}
