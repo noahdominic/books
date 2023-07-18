@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt,onesided]{report}
+
+\usepackage[osf=true]{libertinus}
+
+% lang
+% \usepackage[UKenglish]{babel}
+% \usepackage{csquotes}
+
+\usepackage{subfiles}
+\usepackage{verse} 
+
+% \usepackage[style=verbose-note, natbib=true, backend=biber]{biblatex} % For referencing
+% \usepackage[hidelinks]{hyperref} % Adding URLs in citations
+% \usepackage{cleveref}
+
+\usepackage{fancyhdr}
+\renewcommand{\chaptername}{}
+
+\setcounter{tocdepth}{0}
+\begin{document}
+\pagenumbering{roman}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+ 
+        {\Huge  \textbf{The New Testament}}
+ 
+        \vspace{0.5cm}
+        {}
+                   
+        \vspace{1.5cm}
+        
+        {}
+
+        \vspace{1.5cm}
+        {}
+
+        \vspace{0.5cm}
+        {}
+
+        \vspace{0.5cm}
+
+        \vfill
+    \end{center}
+ \end{titlepage}
+
+\tableofcontents
+
+\pagenumbering{arabic}
+
+\subfile{books/john.tex}
+\end{document}
