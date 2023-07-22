@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt,doublespaced]{report}
+
+% lang
+\usepackage[UKenglish]{babel}
+\usepackage{csquotes}
+\usepackage{numspell}
+
+\usepackage{subfiles}
+% \usepackage{lipsum} % add nonsense text
+% \usepackage{fontspec}
+\usepackage[osf=true]{libertinus}
+% \usepackage{verse}
+
+% \usepackage[style=verbose-note, natbib=true, backend=biber]{biblatex} % For referencing
+% \usepackage[hidelinks]{hyperref} % Adding URLs in citations
+% \usepackage{cleveref}
+% \addbibresource{ref/01.bib}
+
+\newcommand{\secsep}{\begin{center} 
+\end{center}}
+
+\renewcommand*{\thefootnote}{[\arabic{footnote}]}
+
+\newcommand{\generateRecord}[5]{
+    When {#1} had lived \numspell{#2} years,
+    he fathered {#3}.
+    After the birth of {#3},
+    {#1} lived \numspell{#4} years more
+    and fathered sons and daughters.
+    {#1} lived a total of
+    \numspell{#5} years,
+    and then he died.}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+ 
+        {\Huge  \textbf{The Hebrew Bible}}
+ 
+        \vspace{0.5cm}
+        {or, \textsc{The Old Testament}}
+        
+                   
+        \vspace{1.5cm}
+        
+        {\textbf{The Torah}\\
+        sometimes also called,\\
+        \textsc{Instruction}}
+
+        \vspace{1.5cm}
+
+        \vspace{0.5cm}
+        {or\\
+        The Pentateuch of Moses}
+
+        \vspace{0.5cm}
+
+        \vfill
+    \end{center}
+ \end{titlepage}
+
+\tableofcontents
+
+\part[Bereshit]{Bereshit\\[\bigskipamount]
+    \large also called \textsc{Genesis}}
+\subfile{chapters/01-bereshit.tex}
+\part[Bereshit]{Bereshit\\[\bigskipamount]
+    \large also called \textsc{Genesis}}
+\subfile{chapters/01-bereshit.tex}
+% \subfile{chapters/02.tex}
+% \subfile{chapters/03.tex}
+% \subfile{chapters/04.tex}
+% \subfile{chapters/05.tex}
+% \subfile{chapters/06.tex}
+% \subfile{chapters/07.tex}
+% \subfile{chapters/08.tex}
+% \subfile{chapters/09.tex}
+% \subfile{chapters/10.tex}
+
+\end{document}
